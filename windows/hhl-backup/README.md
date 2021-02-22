@@ -5,7 +5,8 @@
  
 2. Run 0-run-hhl-backup.bat as the user, menaing do not run as admin.
 3. Press B (Backup) or R (Restore) depending on the task.
-4. Notify Michael if there are any issues.
+4. Check to make sure the right signature is defaulted in outlook to make it easier for the user. 
+5. Notify Michael if there are any issues.
 
 # Reason:
 This is done this way so we do not enable powershell script execution on the systems. It poses a security risk and is best left disabled unless necessary.
