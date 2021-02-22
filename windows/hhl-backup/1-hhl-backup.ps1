@@ -64,18 +64,18 @@ function restoreSystem {
  $source = "$($driveletter):\hhl-backup"
  #Restore Important Directories
  ECHO "Restoring Desktop..."
- Copy-Item -Recurse "$($source)\Desktop" -Destination $desktop
+ Copy-Item -Recurse "$($source)\Desktop\*" -Destination $desktop
  ECHO "Restoring Documents..."
- Copy-Item -Recurse "$($source)\Documents" -Destination $documents 
+ Copy-Item -Recurse "$($source)\Documents\*" -Destination $documents 
  ECHO "Restoring Favorites..."
- Copy-Item -Recurse "$($source)\Favorites" -Destination  $favorites
+ Copy-Item -Recurse "$($source)\Favorites\*" -Destination  $favorites
  ECHO "Restoring Pictures..."
- Copy-Item -Recurse "$($source)\Pictures" -Destination  $pictures
+ Copy-Item -Recurse "$($source)\Pictures\*" -Destination  $pictures
  ECHO "Restoring Email Signatures..."
- Copy-Item -Recurse "$($source)\Signatures" -Destination $signatures
+ Copy-Item -Recurse "$($source)\Signatures\*" -Destination $signatures
  ECHO "Restoring Bookmarks (Chrome and Edge)..."
- Copy-Item -Force $bmc -Destination "$($source)\bookmarks-chrome" 
- Copy-Item -Force $bme -Destination "$($source)\bookmarks-edge"
+ Copy-Item -Force "$($source)\bookmarks-chrome" -Destination $bmc
+ Copy-Item -Force "$($source)\bookmarks-edge" -Destination $bme
 }
 
 #Execute main function
