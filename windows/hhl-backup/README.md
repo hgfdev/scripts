@@ -3,7 +3,7 @@
  
  **You can also download the entire repository as a zip file but that will download more than you need in some cases.**
  
-2. Run 0-run-hhl-backup.bat as the user, menaing do not run as admin.
+2. Run 0-run-hhl-backup.bat as the user, meaning do not run as admin.
 3. Press B (Backup) or R (Restore) depending on the task.
 4. Check to make sure the right signature is defaulted in outlook to make it easier for the user. 
 5. Notify Michael if there are any issues.
